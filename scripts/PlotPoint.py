@@ -56,6 +56,7 @@ class PlotBreak(gdb.Breakpoint):
         
 
 class PlotVar(gdb.Command):
+    """Plot expression at a specific location in real time."""
     def __init__(self):
         super(PlotVar, self).__init__("plotVar", gdb.COMMAND_SUPPORT, gdb.COMPLETE_SYMBOL)
 

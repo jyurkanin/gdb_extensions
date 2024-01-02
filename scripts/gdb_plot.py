@@ -29,6 +29,7 @@ def get_value(token):
     
 
 class plotData(gdb.Command):
+    """Plot std::vectors of primitive types"""
     def __init__(self):
         super(plotData, self).__init__("plotData", gdb.COMMAND_SUPPORT, gdb.COMPLETE_SYMBOL)
 
